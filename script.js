@@ -6,11 +6,11 @@ function enlargeImage(imgElement){
     document.body.style.overflow = "hidden";
     fullscreenImage.src = imgElement.src;
 
-    fullscreenImageWraper.style.zIndex = "98";
+    fullscreenImageWraper.style.zIndex = "1501";
     fullscreenImageWraper.style.opacity = "0.9";
     fullscreenImageWraper.style.cursor = "pointer"
 
-    fullscreenImage.style.zIndex = "99";
+    fullscreenImage.style.zIndex = "1502";
     fullscreenImage.style.opacity = "1";
     fullscreenImage.style.cursor = "pointer"
 
