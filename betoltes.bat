@@ -12,11 +12,15 @@ ECHO     ^<script src="script.js" defer^>^</script^>>> index.html
 ECHO     ^<title>Fema Photographing</title^>>> index.html
 ECHO ^</head^>>> index.html
 ECHO ^<body^>>> index.html
-ECHO     ^<ul id="photolist"^>>> index.html
+ECHO    ^<div id="fullscreenImageWraper"></div^>>> index.html
+ECHO    ^<img src="" alt="" id="fullscreenImage" class="large" loading="lazy"/^>>> index.html
+ECHO    ^<div class="photowrapper"^>>> index.html
+ECHO        ^<ul id="photolist"^>>> index.html
 FOR %%f IN (.\photos\*.jpg) DO (
-    ECHO         ^<li^>^<img src="%%f"/^>^</li^>>> index.html
+    ECHO            ^<li^>^<img src="%%f"/^>^</li^>>> index.html
 )
-ECHO         ^<li^>^</li^>>> index.html
-ECHO     ^</ul^>>> index.html
+ECHO        ^<li^>^</li^>>> index.html
+ECHO        ^</ul^>>> index.html
+ECHO    ^</div^>>> index.html
 ECHO ^</body^>>> index.html
 ECHO ^</html^>>> index.html
