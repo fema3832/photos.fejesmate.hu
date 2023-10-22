@@ -1,11 +1,6 @@
 # #!/usr/bin/env python
 import os
-def getfiles(dirpath):
-    a = [s for s in os.listdir(dirpath)
-         if os.path.isfile(os.path.join(dirpath, s))]
-    a.sort(key=lambda s: os.path.getmtime(os.path.join(dirpath, s)))
-    return a
-
+import time
 default1 = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,9 +40,13 @@ default2 = """            <li></li>
 </html>
 """
 
+times = []
+for i in os.listdir("photos"):
+    times.append(i)
+
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(default1)
-    for images in getfiles("D:\Projects\websites\!fejesmate.hu's\photos.fejesmate.hu\photos"):
+    for images in sorted(times, key=lambda x: time.strptime(x[:8], '%Y%m%d'), reverse=True):
         if (images.endswith(".jpg")):
             f.write(f'            <li><img src="./photos/{images}" loading="lazy"/></li>\n')
     f.write(default2)
