@@ -9,7 +9,7 @@ ECHO     ^<meta http-equiv="X-UA-Compatible" content="IE=edge"^>>> index.html
 ECHO     ^<meta name="viewport" content="width=device-width, initial-scale=1.0"^>>> index.html
 ECHO     ^<link rel="stylesheet" href="style.css"^>>> index.html
 ECHO     ^<script src="script.js" defer^>^</script^>>> index.html
-ECHO     ^<title>Fema Photographing</title^>>> index.html
+ECHO     ^<title^>Fejes Máté - Fotó^</title^>>> index.html
 ECHO ^</head^>>> index.html
 ECHO ^<body^>>> index.html
 ECHO    ^<div id="fullscreenImageWraper"^>^</div^>>> index.html
