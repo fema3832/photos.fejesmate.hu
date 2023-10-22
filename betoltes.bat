@@ -12,7 +12,7 @@ ECHO     ^<script src="script.js" defer^>^</script^>>> index.html
 ECHO     ^<title>Fema Photographing</title^>>> index.html
 ECHO ^</head^>>> index.html
 ECHO ^<body^>>> index.html
-ECHO    ^<div id="fullscreenImageWraper"></div^>>> index.html
+ECHO    ^<div id="fullscreenImageWraper"^>^</div^>>> index.html
 ECHO    ^<img src="" alt="" id="fullscreenImage" class="large" loading="lazy"/^>>> index.html
 ECHO    ^<div class="photowrapper"^>>> index.html
 ECHO        ^<ul id="photolist"^>>> index.html
